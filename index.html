@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnergizeNow</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+    }
+
+    .hero {
+      background: #172033;
+      color: white;
+      padding: 56px 24px 48px;
+    }
+
+    .wrap {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 12px;
+      border: 1px solid #526078;
+      border-radius: 999px;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 18px 0 12px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: #d7ddea;
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .deadline {
+      margin-top: 28px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: white;
+      color: #172033;
+      padding: 13px 17px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    main {
+      padding: 42px 24px 60px;
+    }
+
+    section {
+      margin-bottom: 38px;
+    }
+
+    h2 {
+      font-size: 25px;
+      margin: 0 0 14px;
+    }
+
+    .intro {
+      color: #596579;
+      line-height: 1.7;
+    }
+
+    .tasks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e1e6ef;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 4px 18px rgba(20, 32, 51, .05);
+    }
+
+    .num {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      background: #edf1f7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #657084;
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    .freedom {
+      background: white;
+      border: 1px solid #dfe5ef;
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .freedom ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      color: #566174;
+      line-height: 1.9;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 15px 17px;
+      background: #f0f3f8;
+      border-radius: 10px;
+      color: #3e4a5e;
+      line-height: 1.6;
+    }
+
+    footer {
+      border-top: 1px solid #e1e6ef;
+      padding: 24px;
+      text-align: center;
+      color: #788296;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .hero {
+        padding-top: 42px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">EnergizeNow</span>
+      <h1>Internship Technical Assignment</h1>
+      <div class="deadline">⏱ Completion time: 1 week</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section>
+        <h2>Assignment</h2>
+        <p class="intro">
+          You will be assigned one of the applications below. You will receive only
+          a minimal description. Explore the problem yourself and decide what the application
+          should contain.
+        </p>
+      </section>
+
+      <section>
+        <h2>Assigned Applications</h2>
+        <div class="tasks">
+          <article class="card">
+            <div class="num">01</div>
+            <h3>HR Management</h3>
+            <p>Build an application to manage employees and HR-related activities.</p>
+          </article>
+          <article class="card">
+            <div class="num">02</div>
+            <h3>CRM</h3>
+            <p>Build an application to manage customers and sales relationships.</p>
+          </article>
+          <article class="card">
+            <div class="num">03</div>
+            <h3>Inventory Management</h3>
+            <p>Build an application to manage products, stock, warehouses and inventory transactions.</p>
+          </article>
+          <article class="card">
+            <div class="num">04</div>
+            <h3>Finance &amp; Accounting</h3>
+            <p>Build an application to manage financial transactions, income, expenses, invoices and accounts.</p>
+          </article>
+          <article class="card">
+            <div class="num">05</div>
+            <h3>Complaints &amp; Service Management</h3>
+            <p>Build an application to manage customer complaints, service requests, assignments and resolution.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>What Your Application Should Demonstrate</h2>
+        <div class="freedom">
+          <p class="intro" style="margin-top:0;">
+            Explore the selected business domain and decide the appropriate features and workflow yourself.
+            Your application should demonstrate, where applicable:
+          </p>
+          <ul>
+            <li>User-friendly UI</li>
+            <li>Appropriate data model and database design</li>
+            <li>Create, view, update and delete operations</li>
+            <li>Search, filtering and sorting</li>
+            <li>Appropriate business workflows and status handling</li>
+            <li>Form validation</li>
+            <li>Proper error handling</li>
+            <li>Meaningful dashboard or summary information</li>
+            <li>Basic authentication/user roles where relevant</li>
+            <li>Clean and maintainable code structure</li>
+            <li>API/backend integration where applicable</li>
+          </ul>
+          <div class="note">
+            <strong>Important:</strong> You do not need to implement every possible feature of the selected
+            application. Focus on a well-designed, working core application and explain what you would add
+            if you had more time.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Rules &amp; Freedom</h2>
+        <div class="freedom">
+          <ul>
+            <li>You have <strong>1 week</strong> to complete the assignment.</li>
+            <li>You may use <strong>any programming language, framework and database</strong>.</li>
+            <li>You may use <strong>AI tools</strong> such as ChatGPT, Claude, Gemini, Copilot, etc.</li>
+            <li>You may refer to <strong>Google, documentation, GitHub and existing applications</strong>.</li>
+            <li>Explore the requirements yourself. No detailed functional specification will be provided.</li>
+            <li>Focus on building something that is actually usable rather than only creating screens.</li>
+            <li>Be prepared to explain your decisions, architecture, data model and implementation during the interview.
+            </li>
+          </ul>
+          <div class="note">
+            <strong>What we want to see:</strong> how you understand an unfamiliar business problem,
+            research it, make decisions, design the solution and build it independently.
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    Internship Technical Assignment · ERP Application Development
+  </footer>
+</body>
+
+</html>
